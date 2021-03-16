@@ -1,0 +1,31 @@
+:root {
+    --background-color: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%);
+    --text-color-base: #FCFBF7;
+    --column-background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
+    --column-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
+    --column-main-background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
+    --column-main-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
+    --ascent-color: #F4B000;
+    --light-color: #918f8a;
+    --span-color: #918f8a;
+    --img-filter: grayscale(100%);
+    --vote-button-url: url("../img/elements/button/button_dark.svg");
+    --vote-button-hover-url: url("../img/elements/button/button_dark_hover.svg");
+    --chart-portrait-bcg: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%);
+    --chart-portrait-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.5);
+
+    --hm-info-m: url("../img/elements/heatmap/dark/info/measure.svg");
+    --hm-info-0: url("../img/elements/heatmap/dark/info/block0.svg");
+    --hm-info-1: url("../img/elements/heatmap/dark/info/block1.svg");
+    --hm-info-2: url("../img/elements/heatmap/dark/info/block2.svg");
+    --hm-info-3: url("../img/elements/heatmap/dark/info/block3.svg");
+
+    --color-info-min-bg: radial-gradient(100% 100% at 50% 0%, rgba(62, 62, 62, 0.5) 0%, rgba(40, 40, 40, 0.5) 100%);
+    --color-info-min-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
+    --color-info-mid-bg: radial-gradient(100% 100% at 50% 0%, rgba(151, 151, 151, 0.5) 0%, rgba(41, 41, 41, 0.5) 100%);
+    --color-info-mid-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
+    --color-info-max-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%);
+    --color-info-max-bs: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9);
+    --color-info-extra-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%);
+    --color-info-extra-bs: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9);
+}

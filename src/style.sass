@@ -1,0 +1,1105 @@
+@mixin lightVars
+  $background-color: #FCFBF7
+  $text-color-base: #261C00
+  $column-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%)
+  $column-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5)
+  $column-main-background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+  $column-main-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8)
+  $ascent-color: #F4B000
+  $light-color: #bfbfbf
+  $img-filter: grayscale(0%)
+  $vote-button-url: url("./img/elements/button/button_light_hover.svg")
+  $vote-button-hover-url: url("./img/elements/button/button_light.svg")
+  $chart-portrait-bcg: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%)
+  $chart-portrait-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8)
+  $hm-info-m: url("./img/elements/heatmap/light/info/measure.svg")
+  $hm-info-0: url("./img/elements/heatmap/light/info/block0.svg")
+  $hm-info-1: url("./img/elements/heatmap/light/info/block1.svg")
+  $hm-info-2: url("./img/elements/heatmap/light/info/block2.svg")
+  $hm-info-3: url("./img/elements/heatmap/light/info/block3.svg")
+  $color-info-min-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%)
+  $color-info-min-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6)
+  $color-info-mid-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%)
+  $color-info-mid-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2)
+  $color-info-max-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%)
+  $color-info-max-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4)
+  $color-info-extra-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%)
+  $color-info-extra-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9)
+
+@mixin darkVars
+  $background-color: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%)
+  $text-color-base: #FCFBF7
+  $column-background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%)
+  $column-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6)
+  $column-main-background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%)
+  $column-main-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4)
+  $ascent-color: #F4B000
+  $light-color: #918f8a
+  $img-filter: grayscale(100%)
+  $vote-button-url: url("./img/elements/button/button_dark.svg")
+  $vote-button-hover-url: url("./img/elements/button/button_dark_hover.svg")
+  $chart-portrait-bcg: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%)
+  $chart-portrait-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.5)
+  $hm-info-m: url("./img/elements/heatmap/dark/info/measure.svg")
+  $hm-info-0: url("./img/elements/heatmap/dark/info/block0.svg")
+  $hm-info-1: url("./img/elements/heatmap/dark/info/block1.svg")
+  $hm-info-2: url("./img/elements/heatmap/dark/info/block2.svg")
+  $hm-info-3: url("./img/elements/heatmap/dark/info/block3.svg")
+  $color-info-min-bg: radial-gradient(100% 100% at 50% 0%, rgba(62, 62, 62, 0.5) 0%, rgba(40, 40, 40, 0.5) 100%)
+  $color-info-min-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5)
+  $color-info-mid-bg: radial-gradient(100% 100% at 50% 0%, rgba(151, 151, 151, 0.5) 0%, rgba(41, 41, 41, 0.5) 100%)
+  $color-info-mid-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5)
+  $color-info-max-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(99, 63, 0, 0.5) 72.92%, rgba(15, 9, 0, 0.5) 100%)
+  $color-info-max-bs: 0px 0px 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(202, 129, 0, 0.9)
+  $color-info-extra-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 163, 0, 0.8) 71.88%, rgba(91, 58, 0, 0.8) 100%)
+  $color-info-extra-bs: 0px 0px 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 162, 0, 0.9)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+q
+  &:before, &:after
+    content: ''
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+
+@font-face
+  font-family: 'RobotoBold'
+  src: url("./font/Roboto-Bold.ttf")
+  font-weight: 700
+
+@font-face
+  font-family: 'RobotoMedium'
+  font-weight: 500
+  src: url("./font/Roboto-Medium.ttf")
+
+@font-face
+  font-family: 'RobotoRegular'
+  font-weight: 400
+  src: url("./font/Roboto-Regular.ttf")
+
+
+*
+  font-family: RobotoMedium, sans-serif
+
+
+.light
+    color: var(--light-color)
+
+html
+  width: 100%
+  height: 100%
+
+body
+  max-width: 100%
+  height: 100%
+  color: var(--text-color-base)
+  background: var(--background-color)
+  overflow: hidden
+  &.vote
+    @media (orientation: landscape)
+      padding: 0 4.792%
+  &.diagram
+    @media (orientation: landscape)
+      padding: 0 6.289%
+  &.heatmap
+    display: flex
+    flex-direction: row
+    justify-content: center
+    @media (max-width: 1024px) and (min-width: 760px)
+      padding: 0 15%
+    @media (orientation: landscape)
+      flex-direction: column
+      justify-content: stretch
+  @media (orientation: portrait)
+    padding: 0 6.384%
+  @media (orientation: landscape)
+    padding: 0 9.881%
+
+
+.headline
+  font-family: RobotoBold
+  font-style: normal
+  font-weight: 700
+  font-size: 30px
+  line-height: 32px
+  @media (max-width: 340px)
+    font-size: 28px
+    line-height: 30px
+  @media (max-height: 340px)
+    font-size: 26px
+    line-height: 28px
+  @media (max-width: 1024px) and (min-width: 760px)
+    font-size: 38px
+    line-height: 40px
+
+.subhead
+  font-family: RobotoBold
+  font-style: normal
+  font-weight: 700
+  font-size: 20px
+  line-height: 22px
+  @media (max-width: 332px)
+    font-size: 18px
+    line-height: 20px
+  @media (max-height: 340px)
+    font-size: 18px
+    line-height: 20px
+  @media (max-width: 1024px) and (min-width: 760px)
+    font-size: 28px
+    line-height: 30px
+
+.body-text
+  font-family: RobotoMedium
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 18px
+  @media (max-width: 332px)
+    font-size: 14px
+    line-height: 16px
+  @media (max-height: 340px)
+    font-size: 14px
+    line-height: 16px
+  @media (max-width: 1024px) and (min-width: 760px)
+    font-size: 24px
+    line-height: 26px
+
+.caption
+  font-family: RobotoRegular
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 16px
+  @media (max-width: 332px)
+    font-size: 12px
+    line-height: 14px
+  @media (max-height: 340px)
+    font-size: 12px
+    line-height: 14px
+  @media (max-width: 1024px) and (min-width: 760px)
+    font-size: 22px
+    line-height: 24px
+
+.container
+  width: 100%
+  height: 100%
+  &.vote
+    display: flex
+    flex-direction: column
+    justify-content: stretch
+  &.chart
+    overflow: hidden
+  &.heatmap
+    justify-content: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (orientation: landscape)
+      height: auto
+      flex-grow: 1
+      justify-self: center
+      align-self: center
+  &.diagram
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @media (orientation: landscape)
+      flex-direction: row
+
+.container-headline
+  position: fixed
+  top: 0
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  z-index: 10
+  &.vote
+    position: inherit
+    padding-top: 6.1%
+    @media (orientation: landscape)
+      padding: 3.732% 0 0
+      width: 100%
+  @media (orientation: portrait)
+    left: 6.4%
+    padding-top: 5.32%
+    max-width: 45%
+    min-width: 300px
+    text-align: left
+    @media (max-width: 1024px) and (min-width: 760px)
+      max-width: 80%
+  @media (orientation: landscape)
+    left: 0
+    padding: 2.995% 7.785% 0
+    width: 84.432%
+    text-align: center
+  @media (max-height: 340px)
+    padding-top: 2%
+  &>h1
+    width: 100%
+    display: inline-block
+    padding-bottom: 8px
+    max-height: 96px
+    @media (max-width: 1024px) and (min-width: 760px)
+      max-height: 160px
+    @media (max-height: 340px)
+      padding-bottom: 6px
+  &>p
+    width: 100%
+    display: inline-block
+    max-height: 26px
+
+.container-inner
+  position: relative
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  min-height: 520px
+  overflow: hidden
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-end
+  z-index: -4
+  &.vote
+    position: relative
+    bottom: 0
+    z-index: 0
+    overflow: hidden
+    display: block
+  @media (max-height: 568px)
+    max-height: 568px
+  @media (orientation: landscape)
+    min-height: 0
+  &.chart
+    width: 100%
+    max-height: 162px
+    min-height: 142px
+    position: absolute
+    bottom: 0
+    right: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @media (orientation: landscape)
+      height: 88px
+      min-height: 88px
+      max-height: 88px
+      @media (min-height: 720px)
+        max-height: 162px
+        height: 122px
+    @media (orientation: portrait)
+      @media (min-width: 720px)
+        height: 202px
+        max-height: 202px
+
+
+.container-rank
+  display: flex
+  height: 100%
+  flex-direction: column
+  justify-content: flex-end
+  &.main
+    &>.personal-info
+      margin-bottom: 18.19%
+      &>.name
+        padding-top: 6px
+        padding-bottom: 4px
+    &>.column
+      background: var(--column-main-background)
+      box-shadow: var(--column-main-box-shadow)
+      &>.headline
+        padding-top: 20.46%
+  @media (orientation: portrait)
+    &:nth-child(1)
+      width: 31.7073171%
+      &>.personal-info
+        position: relative
+        left: -16px
+    &:nth-child(2)
+      width: 26.8292683%
+      &>.personal-info
+        position: relative
+        left: 0
+    &:nth-child(3)
+      width: 31.7073171%
+      &>.personal-info
+        position: relative
+        left: 16px
+    @media (max-width: 340px)
+      &:nth-child(1)
+        width: 31%
+        &>.personal-info
+          position: relative
+          left: -16px
+      &:nth-child(2)
+        width: 26%
+        &>.personal-info
+          position: relative
+          left: 0
+      &:nth-child(3)
+        width: 31%
+        &>.personal-info
+          position: relative
+          left: 16px
+    @media (max-width: 340px)
+      &:nth-child(1)
+        width: 31%
+        &>.personal-info
+          position: relative
+          left: -16px
+      &:nth-child(2)
+        width: 26%
+        &>.personal-info
+          position: relative
+          left: 0
+      &:nth-child(3)
+        width: 31%
+        &>.personal-info
+          position: relative
+          left: 16px
+  @media (orientation: landscape)
+    &:nth-child(1)
+      width: 19.40299%
+      &>.column
+        position: relative
+        left: -32px
+      &>.personal-info
+        position: relative
+        left: -32px
+    &:nth-child(2)
+      width: 16.4179%
+      &>.column
+        position: relative
+        left: -32px
+        &>h1
+          padding-right: 16px
+      &>.personal-info
+        position: relative
+        left: -24px
+        margin-bottom: 18.19%
+    &:nth-child(3)
+      width: 16.4179%
+      &>.personal-info
+        position: relative
+    &:nth-child(4)
+      width: 16.4179%
+      &>.column
+        position: relative
+        left: 0
+        &>h1
+          padding-left: 16px
+      &>.personal-info
+        position: relative
+        left: 24px
+        margin-bottom: 18.19%
+    &:nth-child(5)
+      width: 19.40299%
+      &>.column
+        position: relative
+        left: 16px
+        padding-right: 0
+        padding-left: 16px
+      &>.personal-info
+        position: relative
+        left: 32px
+    @media (max-height: 340px)
+      height: 80%
+      &:nth-child(1)
+        width: 19%
+        &>.column
+          position: relative
+          left: -32px
+        &>.personal-info
+          position: relative
+          left: -32px
+      &:nth-child(2)
+        width: 16%
+        &>.column
+          position: relative
+          left: -32px
+          &>h1
+            padding-right: 16px
+        &>.personal-info
+          position: relative
+          left: -24px
+          margin-bottom: 18.19%
+      &:nth-child(3)
+        width: 16%
+        &>.personal-info
+          position: relative
+      &:nth-child(4)
+        width: 16%
+        &>.column
+          position: relative
+          left: 0
+          &>h1
+            padding-left: 16px
+        &>.personal-info
+          position: relative
+          left: 24px
+          margin-bottom: 18.19%
+      &:nth-child(5)
+        width: 19%
+        &>.column
+          position: relative
+          left: 16px
+          padding-right: 0
+          padding-left: 16px
+        &>.personal-info
+          position: relative
+          left: 32px
+
+.personal-info
+  width: 100%
+  max-width: 120px
+  min-width: 62px
+  height: 162px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  margin-bottom: 15.39%
+  align-self: center
+  text-align: center
+  border-radius: 6px
+  cursor: pointer
+  &.vote
+    justify-content: center
+    width: 104px
+    height: 142px
+    position: relative
+    &:hover
+      background: var(--column-background)
+      box-shadow: var(--column-box-shadow)
+    &:active, &:focus
+      background: var(--column-main-background)
+      box-shadow: var(--column-main-box-shadow)
+    &.selected
+      background: var(--column-main-background)
+      box-shadow: var(--column-main-box-shadow)
+    @media (max-width: 340px)
+      width: 82px
+      height: 122px
+    @media (max-height: 340px)
+      width: 82px
+      height: 122px
+    @media (max-width: 1024px) and (min-width: 760px)
+      width: 162px
+      max-width: 162px
+      height: 236px
+    &>.emoji
+      flex-grow: 0
+      position: absolute
+      z-index: 201
+      top: -5px
+      left: 30px
+      @media (max-width: 1024px) and (min-width: 760px)
+        left: 50px
+        top: 5px
+        font-size: 48px
+      @media (max-height: 340px)
+        left: 26px
+
+    &>.avatar
+      position: relative
+      top: 5px
+      z-index: 200
+      @media (max-width: 1024px) and (min-width: 760px)
+        height: 96px
+        width: 96px
+    &>.name
+      position: relative
+      top: 5px
+
+
+.avatar
+  height: 64px
+  width: 64px
+  object-fit: cover
+  border-radius: 50%
+  @media (max-width: 332px)
+    height: 56px
+    width: 56px
+  @media (max-width: 1024px) and (min-width: 760px)
+    height: 80px
+    width: 80px
+
+img
+  filter: var(--img-filter)
+  z-index: -5
+
+.emoji
+  position: relative
+  left: 0px
+  top: 10px
+  font-family: RobotoBold
+  font-weight: 700
+  font-size: 32px
+  @media (max-width: 332px)
+    font-size: 24px
+  @media (max-height: 340px)
+    font-size: 24px
+  @media (max-width: 1024px) and (min-width: 760px)
+    font-size: 40px
+
+.name
+  width: 100%
+  min-width: 104px
+  word-spacing: 9999999px
+  text-align: center
+  padding-top: 6px
+  padding-bottom: 4px
+  @media (max-height: 340px)
+    width: 96%
+
+.column
+  background: var(--column-background)
+  box-shadow: var(--column-box-shadow)
+  border-radius: 6px 6px 0 0
+  display: flex
+  width: 100%
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  &.low
+    height: 33.684%
+    z-index: 0
+    left: -16px
+    position: relative
+    padding-right: 16px
+    @media (orientation: landscape)
+      height: 18.086%
+
+  &.medium
+    height: 41.168%
+    z-index: 1
+    left: 0
+    padding-left: 16px
+    position: relative
+    @media (orientation: landscape)
+      height: 23.406%
+      padding-right: 16px
+      &>h1
+        padding-top: 20.46%
+  &.high
+    height: 48.654%
+    z-index: 2
+    left: -16px
+    padding: 0 16px
+    position: relative
+    @media (orientation: landscape)
+      height: 28.724%
+  &>.headline
+    padding-top: 17.31%
+  &>.vote-leader
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    &>.personal-info
+      margin-bottom: 5.5%
+      height: 178px
+      &>.name
+        padding-top: 6.82%
+        padding-bottom: 4.55%
+      @media (max-width: 1024px) and (min-width: 760px)
+        height: 244px
+      &>span
+        height: 1px
+        width: 60px
+        background-color: var(--span-color)
+        margin-top: 8.25%
+    &>h1
+      padding-top: 0
+      padding-bottom: 18.19%
+    @media (orientation: landscape)
+      display: none
+
+.row
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  @media (max-width: 340px)
+    max-height: 438px
+  @media (max-height: 340px)
+    max-height: 230px
+    padding-top: 8px
+  &>.personal-info
+    margin-bottom: 0
+  @media (orientation: portrait)
+    &:nth-child(1)
+      padding-right: 8px
+    &:nth-child(3)
+      padding-left: 8px
+    @media (max-width: 1024px) and (min-width: 760px)
+      &:nth-child(1)
+        padding-right: 32px
+      &:nth-child(3)
+        padding-left: 32px
+
+
+.vote-button
+  background: var(--vote-button-url)
+  height: 64px
+  width: 64px
+  outline: none
+  border: none
+  &.high
+    transform: rotate(180deg)
+  &:hover, &:disabled, &:focus, &:active
+    background: var(--vote-button-hover-url)
+
+.slide
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-start
+  @media (orientation: landscape)
+    justify-content: space-between
+
+.personal-info-filler
+  width: 104px
+  height: 142px
+  position: relative
+  @media (max-width: 340px)
+    width: 82px
+    height: 122px
+  @media (max-height: 340px)
+    width: 82px
+    height: 122px
+  @media (max-width: 1024px) and (min-width: 760px)
+    width: 162px
+    max-width: 162px
+    height: 236px
+
+.leaders-block
+  width: 87.235%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  @media (orientation: landscape)
+    flex-direction: row
+    @media (min-height: 720px)
+      height: 68px
+
+  &>span
+    width: 100%
+    height: 2px
+    background-color: #bfbfbf
+    opacity: 30%
+    margin: 16px 0
+    @media (orientation: landscape)
+      height: 100%
+      width: 2px
+      margin: 0 16px
+      @media (min-height: 720px)
+        margin: 0 24px
+
+.chart-leader
+  width: 100%
+  height: 40px
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  &>img
+    height: 40px
+    width: 40px
+  @media (orientation: landscape)
+    width: 220px
+    @media (min-height: 720px)
+      width: 280px
+      height: 56px
+      &>img
+        height: 52px
+        width: 52px
+  @media (orientation: portrait)
+    @media (min-width: 720px)
+      height: 60px
+      &>img
+        height: 56px
+        width: 56px
+
+.text-info
+  height: 100%
+  margin-left: 14px
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  &>.name
+    word-spacing: normal
+    padding: 0
+    text-align: left
+
+.chart-wrapper
+  height: 422px
+  width: 100%
+  position: absolute
+  bottom: 162px
+  right: 0
+  display: flex
+  flex-direction: column
+  justify-content: stretch
+  align-items: flex-end
+  overflow-x: auto
+  overflow-y: hidden
+  @media (orientation: landscape)
+    bottom: 88px
+    //width: 82.635%
+    width: 552px
+    //right: 8.683%
+    height: 47.075%
+    @media (max-height: 340px)
+      width: 488px
+    @media (min-height: 720px)
+      bottom: 122px
+      height: 520px
+      width: 680px
+  @media (orientation: portrait)
+    @media (min-width: 720px)
+      height: 680px
+      bottom: 202px
+
+.chart-info
+  height: 28px
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: flex-end
+  @media (orientation: landscape)
+    @media (min-height: 720px)
+      height: 36px
+  @media (orientation: portrait)
+    @media (min-width: 720px)
+      height: 44px
+
+
+.chart-info-text
+  padding-right: 6.383vw
+  height: 16px
+  width: 40px
+  text-align: center
+  color: #918f8a
+  @media (orientation: landscape)
+    padding-right: 24px
+    &:nth-last-child(-n+1)
+      padding-right: 0
+    @media (min-height: 720px)
+      height: 24px
+      font-size: 20px
+  @media (orientation: portrait)
+    @media (max-width: 340px)
+      padding-right: 8vw
+    @media (min-width: 380px) and (max-width: 430px)
+      padding-right: 7.2vw
+    @media (min-width: 720px)
+      padding-right: 5.2vw
+      font-size: 20px
+      height: 28px
+
+
+.chart-container
+  flex-grow: 1
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: flex-end
+
+.chart-column-wrapper
+  padding-right: 6.383vw
+  height: 100%
+  display: flex
+  max-width: 40px
+  flex-direction: column
+  justify-content: flex-end
+  align-items: center
+  &>h1
+    padding-bottom: 8px
+  @media (orientation: landscape)
+    padding-right: 24px
+    &:nth-last-child(-n+1)
+      padding-right: 0
+    @media (min-height: 720px)
+      &>h1
+        font-size: 24px
+  @media (orientation: portrait)
+    @media (max-width: 340px)
+      padding-right: 8vw
+    @media (min-width: 380px) and (max-width: 430px)
+      padding-right: 7.2vw
+    @media (min-width: 720px)
+      padding-right: 5.2vw
+      width: 40px
+      &>h1
+        font-size: 24px
+
+.chart-column
+  min-height: 8px
+  max-height: 70%
+  width: 40px
+  border-radius: 6px
+  background: var(--column-background)
+  box-shadow: var(--column-box-shadow)
+  @media (orientation: landscape)
+    max-height: 78.6%
+  &.active
+    background: var(--column-main-background)
+    box-shadow: var(--column-main-box-shadow)
+    @media (orientation: portrait)
+      background: var(--chart-portrait-bcg)
+      box-shadow: var(--chart-portrait-bs)
+
+.heatmap-info
+  position: absolute
+  width: 87.232%
+  bottom: 3.593%
+  left: 6.384%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media (orientation: landscape)
+    width: 49.701%
+    position: relative
+    left: 0
+    padding-top: 64px
+    @media (min-height: 720px)
+      padding-top: 96px
+
+.heatmap-info-block
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  width: 18.05%
+  @media (orientation: landscape)
+    align-items: center
+
+.heatmap-info-icon
+  height: 12px
+  width: 100%
+  padding-bottom: 8px
+  background-repeat: no-repeat
+  background-size: contain
+  background-image: var(--hm-info-m)
+  &.block0
+    background-image: var(--hm-info-0)
+  &.block1
+    background-image: var(--hm-info-1)
+  &.block2
+    background-image: var(--hm-info-2)
+  &.block3
+    background-image: var(--hm-info-3)
+  @media (min-width: 720px)
+    padding-bottom: 24px
+
+.heatmap-block
+  width: 13.3333%
+  height: auto
+  position: relative
+  top: 23px
+  filter: none
+  @media (orientation: landscape)
+    width: 8%
+
+.heatmap-row
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-end
+  height: 16.72px
+  &:nth-child(even)
+    justify-content: flex-end
+
+.heatmap-wrapper
+  width: 100%
+  @media  (orientation: landscape)
+    padding-top: 96px
+    width: 79.293%
+    @media (min-height: 720px)
+      width: 100%
+      padding-top: 160px
+
+.container-info-diagram
+  position: relative
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: flex-start
+  &>hr
+    width: 100%
+    height: 2px
+    background-color: var(--light-color)
+    opacity: 30%
+    border: none
+    margin: 16px 0
+  @media (orientation: portrait)
+      padding-bottom: 7.32%
+  @media (orientation: landscape)
+    padding: 0 0 2.995%
+    width: 52.056%
+
+
+.diagram-info-block
+  width: 100%
+  height: 18px
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.color-info
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  &.min
+    background: var(--color-info-min-bg)
+    box-shadow: var(--color-info-min-bs)
+  &.mid
+    background: var(--color-info-mid-bg)
+    box-shadow: var(--color-info-mid-bs)
+  &.max
+    background: var(--color-info-max-bg)
+    box-shadow: var(--color-info-max-bs)
+  &.extra
+    background: var(--color-info-extra-bg)
+    box-shadow: var(--color-info-extra-bs)
+
+.info-text
+  flex-grow: 1
+  padding-left: 10px
+
+.info-change
+
+.info-state
+  min-width: 40px
+  text-align: right
+  @media (orientation: portrait) and (min-width: 720px)
+    min-width: 66px
+  @media (orientation: landscape) and (min-height: 720px)
+    min-width: 66px
+
+.container-doughnut
+  width: 100%
+  height: 49.102%
+  flex-grow: 1
+  margin-top: 88px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  @media (orientation: portrait)
+    @media (max-width: 340px)
+      margin-top: 64px
+    @media (min-width: 720px)
+      margin-top: 120px
+  @media (orientation: landscape)
+    margin-top: 0
+    width: 41.096%
+    flex-grow: 0
+
+.doughnut-wrap
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  z-index: 0
+  position: absolute
+  margin-bottom: 12px
+  @media (orientation: portrait)
+    @media (min-width: 720px)
+      margin-bottom: 34px
+
+
+.doughnut-info
+  z-index: 200
+  width: 100%
+  height: 100%
+  text-align: center
+  margin: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 0
+  &>h1
+    padding-bottom: 8px
+    width: 160px
+    @media (orientation: portrait)
+      @media (min-width: 720px)
+        width: 280px
+    @media (orientation: landscape)
+      width: 120px
+      @media (min-height: 720px)
+        width: 160px
+  &>h2
+    width: 160px
+    @media (orientation: portrait)
+      @media (min-width: 720px)
+        width: 280px
+    @media (orientation: landscape)
+      width: 120px
+      @media (min-height: 720px)
+        width: 180px
+
+.container-inner-diagram
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: center
+  @media (orientation: landscape)
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    height: auto
+    margin-top: 88px
+    margin-bottom: 4.967%

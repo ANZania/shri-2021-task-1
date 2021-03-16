@@ -1,0 +1,32 @@
+:root {
+    --background-color: #FCFBF7;
+    --text-color-base: #261C00;
+    --column-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    --column-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6);
+    --column-main-background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    --column-main-box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+    --ascent-color: #F4B000;
+    --light-color: #bfbfbf;
+    --span-color: #261C00;
+    --img-filter: grayscale(0%);
+    --vote-button-url: url("../img/elements/button/button_light_hover.svg");
+    --vote-button-hover-url: url("../img/elements/button/button_light.svg");
+    --chart-portrait-bcg: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    --chart-portrait-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+
+    --hm-info-m: url("../img/elements/heatmap/light/info/measure.svg");
+    --hm-info-0: url("../img/elements/heatmap/light/info/block0.svg");
+    --hm-info-1: url("../img/elements/heatmap/light/info/block1.svg");
+    --hm-info-2: url("../img/elements/heatmap/light/info/block2.svg");
+    --hm-info-3: url("../img/elements/heatmap/light/info/block3.svg");
+
+    --color-info-min-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
+    --color-info-min-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6);
+    --color-info-mid-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
+    --color-info-mid-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2);
+    --color-info-max-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
+    --color-info-max-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4);
+    --color-info-extra-bg: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
+    --color-info-extra-bs: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9);
+
+}

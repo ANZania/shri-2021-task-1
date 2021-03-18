@@ -403,7 +403,7 @@ window.renderTemplate = function (alias, data) {
                 } else if (type === 'main') {
                     template += `
                         <div class="row">
-                        <button class="vote-button high"></button>
+                        <button disabled class="vote-button high"></button>
                         ${renderUser(user1)}
                         ${renderUser(user2)}
                         <button class="vote-button"></button>
@@ -879,6 +879,5 @@ window.renderTemplate = function (alias, data) {
         import('./themes/dark.css')
     }
     import('./style.sass')
-
     return layout;
 }

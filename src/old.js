@@ -1,7 +1,12 @@
-import Chart from 'chart.js';
+'use strict'
 
-window.renderTemplate = function (alias, data) {
-    const selectedUserId = data.selectedUserId;
+import Chart from 'chart.js';
+import templateData from './data.json';
+import getData from "./getData";
+
+
+window.renderTemplate = function(alias, data) {
+
     let layout = '';
     let avatars = [];
     let theme;
@@ -9,23 +14,10 @@ window.renderTemplate = function (alias, data) {
     let buttons = [];
     let orientation;
 
-
-    const searchPanel = document.location.search;
-    searchPanel.includes('theme=light')? theme = 'light' : theme = 'dark';
-    document.body.classList.contains('theme_light')? theme = 'light' : theme = 'dark';
-
     const importAll = (context, output) => {
         context.keys().forEach((element, index) => {
             output[index] = context(element)
         });
-    }
-
-    const setIMG = (id) => {
-        if (id) {
-            return avatars[id-1]
-        } else {
-            return avatars[12]
-        }
     }
 
     const defineOrientation = () => {
@@ -70,14 +62,14 @@ window.renderTemplate = function (alias, data) {
 
             if (theme === 'dark') {
                 colors.push('rgba(255, 163, 0, 0.8)',
-                    'rgba(99, 63, 0, 0.5)',
-                    'rgba(155, 155, 155, 0.5)',
-                    'rgba(77, 77, 77, 0.5)');
+                            'rgba(99, 63, 0, 0.5)',
+                            'rgba(155, 155, 155, 0.5)',
+                            'rgba(77, 77, 77, 0.5)');
             } else {
                 colors.push('rgba(191, 191, 191, 0.345)',
-                    'rgba(166, 166, 166, 0.1725)',
-                    'rgba(255, 184, 0, 0.24)',
-                    'rgba(255, 184, 0, 0.56)');
+                            'rgba(166, 166, 166, 0.1725)',
+                            'rgba(255, 184, 0, 0.24)',
+                            'rgba(255, 184, 0, 0.56)');
             }
 
             const ctx = document.getElementById('doughnut-chart').getContext('2d');
@@ -99,10 +91,26 @@ window.renderTemplate = function (alias, data) {
         setRowHeight();
     }
 
+    if (document.body.classList.contains('theme-light')) {
+        theme = 'light'
+    } else {
+        theme = 'dark'
+    }
+
     defineOrientation();
     importAll(require.context('./img/avatars/', true, /\.jpg$/), avatars);
     importAll(require.context('./img/elements/button/', true, /\.svg$/), buttons);
     window.onload = setWrapperPosition;
+
+    const selectedUserId = data.selectedUserId;
+
+    const setIMG = (id) => {
+        if (id) {
+            return avatars[id-1]
+        } else {
+            return avatars[12]
+        }
+    }
 
     if (alias === 'leaders') {
         let users = [];
@@ -880,5 +888,71 @@ window.renderTemplate = function (alias, data) {
     }
     import('./style.sass')
 
+    // window.addEventListener('click', (event) => {
+    //     // if (event.target.closest('.vote-button')) {
+    //     //     let button = event.target.closest('.vote-button');
+    //     //
+    //     //     const slides = document.querySelectorAll('.slide');
+    //     //     if (button.classList.contains('high')) {
+    //     //         if (slideCounter > 0) {
+    //     //             slideCounter--;
+    //     //             slides.forEach((element, index) => {
+    //     //                 if (index === slideCounter) {
+    //     //                     element.style.visibility = 'visible';
+    //     //                     element.style.display = 'flex';
+    //     //                 } else {
+    //     //                     element.style.visibility = 'hidden';
+    //     //                     element.style.display = 'none';
+    //     //                 }
+    //     //             })
+    //     //         }
+    //     //     } else {
+    //             if (slideCounter < (slideAmount - 1)) {
+    //                 slideCounter++;
+    //                 slides.forEach((element, index) => {
+    //                     if (index === slideCounter) {
+    //                         element.style.visibility = 'visible';
+    //                         element.style.display = 'flex';
+    //                     } else {
+    //                         element.style.visibility = 'hidden';
+    //                         element.style.display = 'none';
+    //
+    //                     }
+    //                 })
+    //             // }
+    //         // }
+    //         // checkButtons(alias);
+    //     }
+    //
+    //     if (event.target.closest('.personal-info') && (alias === 'vote')) {
+    //         const target = event.target.closest('.personal-info');
+    //         const currentSelected = document.querySelector('.selected');
+    //         if (currentSelected) {
+    //             currentSelected.classList.remove('selected');
+    //             currentSelected.querySelectorAll('.emoji')[0].remove();
+    //         };
+    //         target.classList.add('selected');
+    //         target.insertAdjacentHTML('afterbegin', '<p class="emoji">👍</p>');
+    //     }
+    // })
+
     return layout;
 }
+
+// function checkButtons(alias) {
+//     if (alias === 'vote') {
+//         const currentSlide = document.querySelectorAll('.slide')[slideCounter];
+//         const buttons = currentSlide.querySelectorAll('.vote-button');
+//         if (slideCounter === 0) {
+//             buttons[0].disabled = true
+//             buttons[1].disabled = (slideAmount === 1);
+//         } else if (slideCounter === (slideAmount - 1)) {
+//             buttons[0].disabled = false
+//             buttons[1].disabled = true
+//         }
+//     }
+// }
+
+
+
+getData(templateData)
